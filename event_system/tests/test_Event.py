@@ -1,8 +1,7 @@
 import unittest
 import datetime
 
-from projectQ.packages.eventSystem.Event import Event
-from projectQ.packages.values import RFC3339_DATE_FORMAT
+from event_system import Event, RFC3339_DATE_FORMAT
 
 
 class TestEvent(unittest.TestCase):
@@ -132,7 +131,4 @@ class TestEvent(unittest.TestCase):
 
         # It should return the correct routing key when calling get_routing_key on an instance
         self.assertEqual(event.get_routing_key(), 'event')
-
-if __name__ == '__main__':
-    unittest.main()
 

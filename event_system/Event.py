@@ -21,7 +21,6 @@ class Event:
         try:
             cls.payload_schema.validate(payload)
         except SchemaError as err:
-            print(str(err))
             return False
 
         return True
@@ -32,12 +31,10 @@ class Event:
         try:
             cls.schema.validate(event_dict)
         except SchemaError as err:
-            print(str(err))
             return False
 
         # make sure it has the matching routing key
         if event_dict['routing_key'] != cls.routing_key:
-            print('Routing key mismatch! Expected \'' + cls.routing_key + '\', but got \'' + event_dict['routing_key'] + '\'')
             return False
 
         # make sure its payload is correct

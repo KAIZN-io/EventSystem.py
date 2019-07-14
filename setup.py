@@ -14,6 +14,8 @@ setup(
 		'eventlet == 0.24.1',
 		'schema == 0.6.8'
 	],
+	test_suite='nose2.collector.collector',
+	tests_require=['nose2'],
 	zip_safe=False
 )
 
