@@ -2,7 +2,7 @@
 HN_MESSAGE_BROKER = 'messageBroker'
 
 # get exchages
-EXCHANGE_EVENTS = os.environ.get('EXCHANGE_EVENTS')
+EXCHANGE_EVENTS = 'exchange.events'
 
 # the default date format used for encoding and decoding messages
 RFC3339_DATE_FORMAT = '%Y-%m-%dT%H:%M:%S.%f'

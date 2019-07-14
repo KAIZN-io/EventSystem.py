@@ -9,6 +9,11 @@ setup(
 	author_email='email@janlucaklees.de',
 	license='MIT',
 	packages=['event_system'],
+	install_requires=[
+		'pika == 0.13.0',
+		'eventlet == 0.24.1',
+		'schema == 0.6.8'
+	],
 	zip_safe=False
 )
 

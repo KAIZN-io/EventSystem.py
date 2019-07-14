@@ -2,7 +2,7 @@ import eventlet
 import pika
 
 from .values import HN_MESSAGE_BROKER, EXCHANGE_EVENTS
-from .events import Event
+from .Event import Event
 from .RobustConsumer import RobustConsumer
 
 

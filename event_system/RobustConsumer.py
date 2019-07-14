@@ -4,7 +4,7 @@ eventlet.monkey_patch()
 import pika
 
 from .values import HN_MESSAGE_BROKER, EXCHANGE_EVENTS
-from events import Event
+from .Event import Event
 
 
 class RobustConsumer:

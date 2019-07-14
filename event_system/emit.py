@@ -2,7 +2,7 @@ import logging
 import pika
 
 from .values import HN_MESSAGE_BROKER, EXCHANGE_EVENTS
-from .events import Event
+from .Event import Event
 
 
 logger = logging.getLogger(__name__)
