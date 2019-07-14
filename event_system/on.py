@@ -1,9 +1,9 @@
 import eventlet
 import pika
 
-from projectQ.packages.values import HN_MESSAGE_BROKER, EXCHANGE_EVENTS
-from projectQ.packages.eventSystem.Event import Event
-from projectQ.packages.eventSystem.RobustConsumer import RobustConsumer
+from .values import HN_MESSAGE_BROKER, EXCHANGE_EVENTS
+from .events import Event
+from .RobustConsumer import RobustConsumer
 
 
 def on(event_class, durable_for_service_name = None):

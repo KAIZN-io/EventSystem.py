@@ -1,8 +1,8 @@
 import logging
 import pika
 
-from projectQ.packages.values import HN_MESSAGE_BROKER, EXCHANGE_EVENTS
-from projectQ.packages.eventSystem.Event import Event
+from .values import HN_MESSAGE_BROKER, EXCHANGE_EVENTS
+from .events import Event
 
 
 logger = logging.getLogger(__name__)
