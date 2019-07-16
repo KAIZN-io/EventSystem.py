@@ -1,0 +1,9 @@
+image: "python:3.6.8-slim-stretch"
+
+before_script:
+  - pip install .
+
+test:
+  script:
+    - python setup.py test
+
